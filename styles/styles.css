@@ -199,9 +199,6 @@ img {
   line-height: 1.714;
   color: var(--mail_and_links_footer_color);
 }
-.order_service {
-  background-color: var(--background_color_footer);
-}
 .main_text_index {
   font-weight: 900;
   font-size: 44px;
@@ -217,6 +214,8 @@ img {
   padding-bottom: 37px;
 }
 .order_service {
+  background-color: var(--background_color_footer);
+  background-image: url("/images/backgraund_photo.jpg");
   text-align: center;
   align-items: center;
   padding-top: 200px;
