@@ -20,6 +20,7 @@
   --background_portfolio: rgba(255, 255, 255, 1);
   --color_item_portfolio: rgba(33, 33, 33, 1);
   --color_type_item_portfolio: rgba(117, 117, 117, 1);
+  --color_social_media_icon_footer: rgba(255, 255, 255, 1);
 }
 header {
   padding-right: 277px;
@@ -188,6 +189,7 @@ img {
   text-decoration: none;
 }
 .adress {
+  width: 246px;
   padding-top: 20px;
   row-gap: 9px;
 }
@@ -214,6 +216,33 @@ img {
   font-size: 14px;
   line-height: 1.714;
   color: var(--mail_and_links_footer_color);
+}
+.social_media_footer {
+  margin-left: 531px;
+  margin-top: 10px;
+  padding-bottom: 100px;
+}
+.join_us {
+  color: var(--second_color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.142;
+  padding-bottom: 20px;
+}
+.social_media_icon_footer_list {
+  display: flex;
+  list-style: none;
+  gap: 10px;
+}
+.social_media_icon_footer {
+  background-color: rgba(255, 255, 255, 0.1);
+  height: 44px;
+  width: 44px;
+  padding: 12px;
+  border-radius: 50%;
+}
+.color_icon_footer {
+  color: var(--second_color);
 }
 .main_text_index {
   font-weight: 900;
