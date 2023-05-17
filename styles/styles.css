@@ -187,6 +187,7 @@ img {
   line-height: 1.192;
   color: var(--second_color);
   text-decoration: none;
+  padding-top: 60px;
 }
 .adress {
   width: 246px;
@@ -218,8 +219,8 @@ img {
   color: var(--mail_and_links_footer_color);
 }
 .social_media_footer {
-  margin-left: 531px;
-  margin-top: 10px;
+  margin-top: -12px;
+  padding-left: 70px;
   padding-bottom: 100px;
 }
 .join_us {
