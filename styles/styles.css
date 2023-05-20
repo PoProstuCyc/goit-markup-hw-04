@@ -26,7 +26,7 @@
 
   /* kolory portfolio*/
   --color_type_item_portfolio: rgba(117, 117, 117, 1);
-  --color_buttions_portfolio: rgba(33, 33, 33, 1);
+  --color_buttons_portfolio: rgba(33, 33, 33, 1);
   --background_color_buttons_portfolio: rgba(245, 244, 250, 1);
   --background_color_items_portfolio: rgba(238, 238, 238, 1);
   --background_portfolio: rgba(255, 255, 255, 1);
@@ -106,9 +106,14 @@ ul {
   display: flex;
   padding: 32px 371px 32px 93px;
 }
-.navigate_buttions {
+.navigate_buttons {
   color: var(--main_color);
-  border: none;
+}
+.navigate_buttons:hover {
+  color: var(--focus_hover_color);
+}
+.navigate_buttons:focus {
+  color: var(--focus_hover_color);
 }
 .contacts {
   padding-top: 32px;
@@ -408,14 +413,14 @@ ul {
   padding: 16px 32px;
 }
 /* style portfolio */
-.buttion_portfolio:hover {
+.button_portfolio:hover {
   background-color: var(--focus_hover_color);
   color: var(--second_color);
   border: none;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
-.buttion_portfolio:focus {
+.button_portfolio:focus {
   background-color: var(--focus_hover_color);
   color: var(--second_color);
   border: none;
@@ -430,11 +435,11 @@ ul {
   padding-top: 92px;
   padding-bottom: 50px;
 }
-.buttion_portfolio {
+.button_portfolio {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.625;
-  color: var(--color_buttions_portfolio);
+  color: var(--color_buttons_portfolio);
   background-color: var(--background_color_buttons_portfolio);
   border-radius: 4px;
   border: none;
