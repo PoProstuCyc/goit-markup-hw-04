@@ -149,27 +149,31 @@ ul {
   align-items: baseline;
   gap: 10px;
 }
+.icon_header {
+  stroke: var(--mail_and_links_header_color);
+}
+.image_header:hover {
+  stroke: var(--focus_hover_color);
+  fill: var(--second_color);
+}
+.image_header:focus {
+  stroke: var(--focus_hover_color);
+  fill: var(--second_color);
+}
 .links:hover {
   color: var(--focus_hover_color);
-  border: none;
 }
 .links:focus {
   color: var(--focus_hover_color);
-  border: none;
 }
-
 .mail_header:hover {
   color: var(--focus_hover_color);
-  border: none;
 }
-
 .mail_header:focus {
   color: var(--focus_hover_color);
-  border: none;
 }
 .telephone_header:hover {
   color: var(--focus_hover_color);
-  border: none;
 }
 .telephone_header:focus {
   color: var(--focus_hover_color);
