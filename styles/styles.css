@@ -412,11 +412,15 @@ ul {
   background-color: var(--focus_hover_color);
   color: var(--second_color);
   border: none;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .buttion_portfolio:focus {
   background-color: var(--focus_hover_color);
   color: var(--second_color);
   border: none;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .background_portfolio {
   background-color: var(--background_portfolio);
