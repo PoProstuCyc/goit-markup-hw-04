@@ -23,6 +23,8 @@
   --staff_background_color: rgba(255, 255, 255, 1);
   --profession_color: rgba(117, 117, 117, 1);
   --color_icon_our_aces: rgba(245, 244, 250, 1);
+  --color_social_media_our_team: rgba(175, 177, 184, 1);
+  --color_our_clients_logos: rgba(175, 177, 184, 1);
 
   /* kolory portfolio*/
   --color_type_item_portfolio: rgba(117, 117, 117, 1);
@@ -398,6 +400,15 @@ ul {
 .social_media_developer:hover {
   background-color: var(--focus_hover_color);
 }
+.social_media_our_team {
+  fill: var(--color_social_media_our_team);
+  padding: 1px;
+}
+
+.social_media_our_team:hover {
+  fill: var(--second_color);
+}
+
 /* nasii klieni */
 .our_clients_header {
   text-align: center;
@@ -416,6 +427,10 @@ ul {
   border: 1px solid #afb1b8;
   border-radius: 4px;
   padding: 16px 32px;
+}
+.our_clients_logos {
+  stroke: var(--color_our_clients_logos);
+  fill: var(--color_our_clients_logos);
 }
 /* style portfolio */
 .button_portfolio:hover {
