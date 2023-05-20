@@ -95,7 +95,7 @@ ul {
 }
 .navigate_list {
   display: flex;
-  justify-content: space-between;
+  gap: 46px;
   width: 254px;
 }
 .navigate {
@@ -104,7 +104,7 @@ ul {
   font-size: 14px;
   line-height: 1.142;
   display: flex;
-  padding: 32px 371px 32px 93px;
+  padding: 32px 345px 32px 93px;
 }
 .navigate_buttons {
   color: var(--main_color);
@@ -115,15 +115,16 @@ ul {
 .navigate_buttons:focus {
   color: var(--focus_hover_color);
 }
-.contacts {
-  padding-top: 32px;
-  padding-bottom: 32px;
-}
 .contacts_list {
   display: flex;
 }
-.image_header {
+.mail_header_list {
+  display: flex;
   color: var(--mail_and_links_header_color);
+  padding-top: 32px;
+  padding-bottom: 32px;
+  align-items: baseline;
+  gap: 10px;
 }
 .mail_header {
   font-weight: 500;
@@ -131,22 +132,22 @@ ul {
   line-height: 1.142;
   color: var(--mail_and_links_header_color);
   width: 135px;
-  padding-right: 30px;
+  margin-right: 30px;
 }
 .telephone_header {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.142;
   color: var(--mail_and_links_header_color);
+
   width: 110px;
 }
-.image_header:hover {
-  color: var(--focus_hover_color);
-  border: none;
-}
-.image_header:focus {
-  color: var(--focus_hover_color);
-  border: none;
+.tel_header_list {
+  color: var(--mail_and_links_header_color);
+  padding-top: 33px;
+  padding-bottom: 31px;
+  align-items: baseline;
+  gap: 10px;
 }
 .links:hover {
   color: var(--focus_hover_color);
