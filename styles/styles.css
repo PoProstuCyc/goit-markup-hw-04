@@ -254,7 +254,7 @@ ul {
 }
 .order_service {
   background-color: var(--background_color_footer);
-  background-image: url("/images/backgraund_photo.jpg");
+  background-image: url("../images/backgraund_photo.jpg");
   text-align: center;
   align-items: center;
   padding-top: 200px;
