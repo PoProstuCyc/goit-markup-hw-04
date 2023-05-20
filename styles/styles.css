@@ -1,27 +1,39 @@
 :root {
+  /* kolory ogólne */
+  --main_color: rgba(0, 0, 0, 1);
   --second_color_logo: rgba(33, 150, 243, 1);
   --background_color_footer: rgba(47, 48, 58, 1);
   --focus_hover_color: rgba(33, 150, 243, 1);
-  --main_color: rgba(0, 0, 0, 1);
-  --color_navigate: rgba(33, 33, 33, 1);
   --second_color: rgba(255, 255, 255, 1);
+
+  /* kolory nagłówka*/
+  --color_navigate: rgba(33, 33, 33, 1);
   --mail_and_links_header_color: rgba(117, 117, 117, 1);
+
+  /* kolory stopki */
   --mail_and_links_footer_color: rgba(255, 255, 255, 0.6);
+  --color_social_media_icon_footer: rgba(255, 255, 255, 1);
+
+  /* kolory index*/
   --our_aces_color: rgba(255, 255, 255, 1);
   --our_aces_text_color: rgba(117, 117, 117, 1);
-  --header_color: rgba(33, 33, 33, 1);
+  --headers_color: rgba(33, 33, 33, 1);
   --our_team_background_color: rgba(245, 244, 250, 1);
   --name_colour: rgba(33, 33, 33, 1);
   --staff_background_color: rgba(255, 255, 255, 1);
   --profession_color: rgba(117, 117, 117, 1);
+  --color_icon_our_aces: rgba(245, 244, 250, 1);
+
+  /* kolory portfolio*/
+  --color_type_item_portfolio: rgba(117, 117, 117, 1);
   --color_buttions_portfolio: rgba(33, 33, 33, 1);
   --background_color_buttons_portfolio: rgba(245, 244, 250, 1);
   --background_color_items_portfolio: rgba(238, 238, 238, 1);
   --background_portfolio: rgba(255, 255, 255, 1);
   --color_item_portfolio: rgba(33, 33, 33, 1);
-  --color_type_item_portfolio: rgba(117, 117, 117, 1);
-  --color_social_media_icon_footer: rgba(255, 255, 255, 1);
 }
+
+/* style ogólne */
 header {
   padding-right: 277px;
   padding-left: 215px;
@@ -31,6 +43,7 @@ body {
   width: 1600px;
   font-family: Roboto, sans-serif;
   color: var(--main_color);
+  cursor: default;
 }
 footer {
   background-color: var(--background_color_footer);
@@ -46,6 +59,9 @@ a {
 }
 img {
   display: block;
+}
+ul {
+  list-style: none;
 }
 .container {
   width: 1200px;
@@ -63,6 +79,7 @@ img {
 .menu {
   display: flex;
 }
+/* style nagłówka */
 .logo_header {
   font-family: "Raleway";
   font-weight: 700;
@@ -70,7 +87,6 @@ img {
   line-height: 1.192;
   color: var(--main_color);
   width: 145px;
-  text-decoration: none;
   padding-top: 24px;
   padding-bottom: 25px;
 }
@@ -78,7 +94,6 @@ img {
   color: var(--second_color_logo);
 }
 .navigate_list {
-  list-style: none;
   display: flex;
   justify-content: space-between;
   width: 254px;
@@ -91,13 +106,15 @@ img {
   display: flex;
   padding: 32px 371px 32px 93px;
 }
-
+.navigate_buttions {
+  color: var(--main_color);
+  border: none;
+}
 .contacts {
   padding-top: 32px;
   padding-bottom: 32px;
 }
 .contacts_list {
-  list-style: none;
   display: flex;
 }
 .image_header {
@@ -117,11 +134,6 @@ img {
   line-height: 1.142;
   color: var(--mail_and_links_header_color);
   width: 110px;
-}
-.links {
-  text-decoration: none;
-  color: var(--main_color);
-  border: none;
 }
 .image_header:hover {
   color: var(--focus_hover_color);
@@ -157,6 +169,7 @@ img {
   color: var(--focus_hover_color);
   border: none;
 }
+/* style stopki */
 .contacts_footer:hover {
   color: var(--focus_hover_color);
   border: none;
@@ -165,7 +178,6 @@ img {
   color: var(--focus_hover_color);
   border: none;
 }
-
 .logo_footer {
   font-family: "Raleway";
   font-style: normal;
@@ -173,7 +185,6 @@ img {
   font-size: 26px;
   line-height: 1.192;
   color: var(--second_color);
-  text-decoration: none;
   padding-top: 60px;
 }
 .adress {
@@ -181,8 +192,8 @@ img {
   padding-top: 20px;
   row-gap: 9px;
 }
-.adress_list_footer {
-  list-style: none;
+.list_adress_footer {
+  display: block;
 }
 .address_footer {
   font-style: normal;
@@ -212,7 +223,6 @@ img {
 }
 .social_media_icon_footer_list {
   display: flex;
-  list-style: none;
   gap: 10px;
 }
 .social_media_icon_footer {
@@ -222,9 +232,12 @@ img {
   padding: 12px;
   border-radius: 50%;
 }
-.color_icon_footer {
-  color: var(--second_color);
+.social_media_icon_footer:hover {
+  background-color: var(--focus_hover_color);
 }
+
+/* style index */
+/* zamów usługę */
 .main_text_index {
   font-weight: 900;
   font-size: 44px;
@@ -259,12 +272,24 @@ img {
   border-radius: 4px;
   padding: 10px 41px 10px 42px;
 }
+/* nasze umiejetności */
 .our_aces {
   background-color: var(--our_aces_color);
 }
+.icon_our_aces {
+  height: 120px;
+  padding: 25px 100px;
+  background: var(--color_icon_our_aces);
+  border-radius: 4px;
+}
+.icon_our_aces_list {
+  display: flex;
+  gap: 30px;
+  padding-top: 94px;
+  padding-bottom: 30px;
+}
 .our_aces_list {
   display: flex;
-  list-style: none;
   justify-content: space-between;
   gap: 30px;
 }
@@ -281,6 +306,7 @@ img {
   line-height: 1.714;
   color: var(--mail_and_links_header_color);
 }
+/* czym sie zajmujemy */
 .what_we_do {
   align-items: center;
   padding-bottom: 94px;
@@ -289,20 +315,20 @@ img {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.166;
-  color: var(--header_color);
+  color: var(--headers_color);
   text-align: center;
   padding: 94px 409px 50px 409px;
 }
 .what_we_do_list {
   display: flex;
-  list-style: none;
   gap: 30px;
 }
+/* znasz zespół */
 .our_team_header {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.166;
-  color: var(--header_color);
+  color: var(--headers_color);
   text-align: center;
 }
 .our_team {
@@ -313,7 +339,6 @@ img {
 }
 .our_team_list {
   display: flex;
-  list-style: none;
   padding-top: 50px;
   padding-left: 20px;
   padding-right: 20px;
@@ -333,7 +358,7 @@ img {
   font-size: 16px;
   line-height: 1.1875;
   text-align: center;
-  padding-bottom: 30px;
+  padding-bottom: 16px;
 }
 .teammate {
   background-color: var(--staff_background_color);
@@ -349,6 +374,40 @@ img {
   color: var(--profession_color);
   border: none;
 }
+.social_media_developer_list {
+  display: flex;
+  gap: 10px;
+  padding: 16px 32px 30px 32px;
+}
+.social_media_developer {
+  height: 44px;
+  width: 44px;
+  border-radius: 50%;
+  padding: 12px;
+}
+.social_media_developer:hover {
+  background-color: var(--focus_hover_color);
+}
+/* nasii klieni */
+.our_clients_header {
+  text-align: center;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.166;
+  padding-top: 94px;
+  padding-bottom: 50px;
+}
+.our_clients_list {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 94px;
+}
+.our_clients_item {
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  padding: 16px 32px;
+}
+/* style portfolio */
 .buttion_portfolio:hover {
   background-color: var(--focus_hover_color);
   color: var(--second_color);
@@ -363,7 +422,7 @@ img {
   background-color: var(--background_portfolio);
   border: none;
 }
-.filters {
+.filters_portfolio {
   padding-top: 92px;
   padding-bottom: 50px;
 }
@@ -378,26 +437,20 @@ img {
   cursor: pointer;
   padding: 6px 22px 6px 22px;
 }
-.card_list {
+.card_list_portfolio {
   display: flex;
   justify-content: center;
-  list-style: none;
+  gap: 8px;
 }
-.card_list_paddding {
-  padding-left: 8px;
-}
-.card_set {
+.card_set_portfolio {
   display: flex;
   flex-wrap: wrap;
   padding: 0;
   gap: 30px;
-  list-style: none;
   padding-bottom: 94px;
 }
-.projects {
-  background-color: #ffffff;
-}
-.project {
+.projects_portfolio {
+  background-color: var(--second_color);
   width: 370px;
 }
 .name_item_portfolio {
@@ -412,21 +465,8 @@ img {
   line-height: 2;
   color: var(--color_type_item_portfolio);
 }
-.borders_cards {
+.borders_cards_portfolio {
   border: 1px solid rgba(238, 238, 238, 1);
   border-top: 0;
   padding: 20px 24px;
-}
-.icon_our_aces {
-  height: 120px;
-  padding: 25px 100px;
-  background: #f5f4fa;
-  border-radius: 4px;
-}
-.icon_our_aces_list {
-  list-style: none;
-  display: flex;
-  gap: 30px;
-  padding-top: 94px;
-  padding-bottom: 30px;
 }
