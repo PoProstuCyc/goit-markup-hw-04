@@ -428,9 +428,16 @@ ul {
   border-radius: 4px;
   padding: 16px 32px;
 }
+.our_clients_item:hover {
+  color: var(--focus_hover_color);
+}
 .our_clients_logos {
-  stroke: var(--color_our_clients_logos);
-  fill: var(--color_our_clients_logos);
+  stroke: rgba(175, 177, 184, 1);
+  fill: rgba(175, 177, 184, 1);
+}
+.our_clients_logos:hover {
+  stroke: var(--focus_hover_color);
+  fill: var(--focus_hover_color);
 }
 /* style portfolio */
 .button_portfolio:hover {
