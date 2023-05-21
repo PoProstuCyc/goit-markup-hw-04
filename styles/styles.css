@@ -419,12 +419,19 @@ ul {
   padding-bottom: 50px;
 }
 .our_clients_list {
+  item-align: center;
   display: flex;
   gap: 30px;
   margin-bottom: 94px;
 }
-
+.our_clients_item {
+  height: 92px;
+  width: 170px;
+}
 .our_clients_logos {
+  height: 92px;
+  width: 170px;
+  padding: 16px 32px;
   fill: var(--color_our_clients_logos);
   border: 1px solid #afb1b8;
   border-radius: 4px;
