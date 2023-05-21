@@ -397,20 +397,6 @@ ul {
   padding: 12px;
 }
 .social_media_developer:hover {
-<<<<<<< Updated upstream
-  background-color: var(--focus_hover_color);
-  height: 44px;
-  width: 44px;
-  border-radius: 50%;
-}
-.social_media_our_team {
-  fill: var(--color_social_media_our_team);
-  padding: 1px;
-}
-
-.social_media_our_team:hover {
-=======
->>>>>>> Stashed changes
   fill: var(--second_color);
   background-color: var(--focus_hover_color);
 }
