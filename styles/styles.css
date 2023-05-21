@@ -128,6 +128,10 @@ ul {
   align-items: baseline;
   gap: 10px;
 }
+.mail_header_list:focus {
+  color: var(--focus_hover_color);
+  fill: var(--focus_hover_color);
+}
 .mail_header {
   font-weight: 500;
   font-size: 14px;
@@ -141,7 +145,6 @@ ul {
   font-size: 14px;
   line-height: 1.142;
   color: var(--mail_and_links_header_color);
-
   width: 110px;
 }
 .tel_header_list {
@@ -151,22 +154,15 @@ ul {
   align-items: baseline;
   gap: 10px;
 }
-.icon_header {
-  stroke: var(--mail_and_links_header_color);
+.tel_header_list:hover {
+  fill: var(--focus_hover_color);
+  color: var(--focus_hover_color);
+}
+.image_header {
+  fill: var(--mail_and_links_header_color);
 }
 .image_header:hover {
-  stroke: var(--focus_hover_color);
-  fill: var(--second_color);
-}
-.image_header:focus {
-  stroke: var(--focus_hover_color);
-  fill: var(--second_color);
-}
-.links:hover {
-  color: var(--focus_hover_color);
-}
-.links:focus {
-  color: var(--focus_hover_color);
+  fill: var(--focus_hover_color);
 }
 .mail_header:hover {
   color: var(--focus_hover_color);
@@ -238,6 +234,7 @@ ul {
   gap: 10px;
 }
 .social_media_icon_footer {
+  fill: var(--second_color);
   background-color: rgba(255, 255, 255, 0.1);
   height: 44px;
   width: 44px;
@@ -246,6 +243,7 @@ ul {
 }
 .social_media_icon_footer:hover {
   background-color: var(--focus_hover_color);
+  fill: var(--second_color);
 }
 
 /* style index */
@@ -399,6 +397,9 @@ ul {
 }
 .social_media_developer:hover {
   background-color: var(--focus_hover_color);
+  height: 44px;
+  width: 44px;
+  border-radius: 50%;
 }
 .social_media_our_team {
   fill: var(--color_social_media_our_team);
