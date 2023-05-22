@@ -231,6 +231,14 @@ a.image_header {
 
 /* style index */
 /* zamów usługę */
+.order_service {
+  background-color: var(--background_color_footer);
+  background-image: url("../images/backgraund_photo.jpg");
+  text-align: center;
+  align-items: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
 .main_text_index {
   font-weight: 900;
   font-size: 44px;
@@ -244,14 +252,6 @@ a.image_header {
   margin-left: auto;
   justify-content: center;
   padding-bottom: 37px;
-}
-.order_service {
-  background-color: var(--background_color_footer);
-  background-image: url("../images/backgraund_photo.jpg");
-  text-align: center;
-  align-items: center;
-  padding-top: 200px;
-  padding-bottom: 200px;
 }
 .button_index {
   font-weight: 700;
