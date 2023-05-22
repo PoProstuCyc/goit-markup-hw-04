@@ -55,6 +55,11 @@ footer {
 a {
   text-decoration: none;
 }
+a:hover svg {
+  fill: var(--focus_hover_color);
+  color: var(--focus_hover_color);
+}
+
 * {
   margin: 0;
   padding: 0;
