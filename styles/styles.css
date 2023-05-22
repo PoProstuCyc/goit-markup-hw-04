@@ -55,8 +55,7 @@ footer {
 a {
   text-decoration: none;
 }
-a:hover svg {
-  fill: var(--focus_hover_color);
+a:hover svg .image_header {
   color: var(--focus_hover_color);
 }
 
