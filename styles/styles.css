@@ -133,6 +133,7 @@ a.image_header {
   font-size: 14px;
   line-height: 1.142;
   color: var(--mail_and_links_header_color);
+  gap: 10px;
 }
 .mail_header_list {
   display: flex;
@@ -142,7 +143,6 @@ a.image_header {
   display: flex;
   padding-top: 32px;
   padding-bottom: 32px;
-  gap: 10px;
   margin-right: 50px;
   width: 135px;
 }
@@ -154,7 +154,6 @@ a.image_header {
   color: var(--mail_and_links_header_color);
   padding-top: 32px;
   padding-bottom: 32px;
-  gap: 10px;
 }
 /* style stopki */
 .contacts_footer:hover {
