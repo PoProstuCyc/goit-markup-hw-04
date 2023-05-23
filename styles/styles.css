@@ -378,7 +378,10 @@ a.image_header {
   fill: var(--second_color);
   background-color: var(--focus_hover_color);
 }
-
+.social_media_developer:focus {
+  fill: var(--second_color);
+  background-color: var(--focus_hover_color);
+}
 /* nasii klieni */
 .our_clients_header {
   text-align: center;
